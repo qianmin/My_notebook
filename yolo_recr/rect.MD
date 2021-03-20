@@ -1,4 +1,4 @@
-# 1 自定义消息
+# 1 自定义消息（数组）
 ```
 <build_depend>message_generation</build_depend>
 <exec_depend>message_runtime</exec_depend>
