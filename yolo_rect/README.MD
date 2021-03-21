@@ -1,13 +1,14 @@
 # 如何用yolov5发送检测的边界框
 ## 启动！！
- - 启动source
+ - 启动激光雷达
    ```Shell
    cd projects/leishen_ws/
    source devel/setup.bash
-   ```
- - 启动激光雷达
-   ```Shell
    roslaunch lslidar_c32_decoder lslidar_c32.launch 
+   roslaunch rslidar_to_velodyne rslidar_to_vdyne.launch 
+   ```
+ - 启动激光雷达转换
+   ```Shell
    roslaunch rslidar_to_velodyne rslidar_to_vdyne.launch 
    ```
  - 启动原始图像
