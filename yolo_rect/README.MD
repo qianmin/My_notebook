@@ -7,7 +7,7 @@
    ```
  - 启动激光雷达
    ```Shell
-   roslaunch roslaunch lslidar_c32_decoder lslidar_c32.launch 
+   roslaunch lslidar_c32_decoder lslidar_c32.launch 
    roslaunch rslidar_to_velodyne rslidar_to_vdyne.launch 
    ```
  - 启动原始图像
