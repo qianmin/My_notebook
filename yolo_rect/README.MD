@@ -1,6 +1,6 @@
 # 如何用yolov5发送检测的边界框
 ## 启动！！
-  - source
+ - 启动source
    ```Shell
    cd projects/leishen_ws/
    source devel/setup.bash
