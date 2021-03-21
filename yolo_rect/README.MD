@@ -20,6 +20,10 @@
    ```
  - 启动lidar_camera_fusion
    ```Shell
+   rosrun yolo_rect yolo_rect_pub.py
+   roslaunch lidar_camera_fusion yolo_distance.launch 
+   rosrun lidar_camera_fusion yolo_dtance_show.py 
+   
    roslaunch lidar_camera_fusion lidar_camera_fusion.launch
    ```
  - 融合图像话题
