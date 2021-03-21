@@ -5,7 +5,6 @@
    cd projects/leishen_ws/
    source devel/setup.bash
    roslaunch lslidar_c32_decoder lslidar_c32.launch 
-   roslaunch rslidar_to_velodyne rslidar_to_vdyne.launch 
    ```
  - 启动激光雷达转换
    ```Shell
