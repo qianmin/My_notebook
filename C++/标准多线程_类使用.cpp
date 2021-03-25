@@ -1,3 +1,4 @@
+//函数复用、类里面自带多线程
 #include <thread>
 #include <iostream>
 using namespace std;
@@ -44,8 +45,8 @@ public:
     std::thread f11Thread() {
       return std::thread([=] { f1(); });
     }
-    std::thread f21Thread() {
-      return std::thread([=] { f2(5,10); });
+    std::thread f21Thread(int a, int b) {
+      return std::thread([=] { f2(a,b); });
     }
 
 
@@ -54,10 +55,12 @@ public:
     {
       std::thread tw1 = f1Thread();
       std::thread tw2 = f2Thread(a, b);
+      std::thread tw21 = f21Thread(100, 200);
       std::thread tw11 = f11Thread();
       tw1.detach();
       tw2.detach();
       tw11.detach();
+      tw21.detach();
     }
 
 };
